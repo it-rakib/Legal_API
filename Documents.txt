@@ -1,0 +1,3 @@
+
+D:\PROJECTS\MY RESPONSIBILITIES\Microservice\Services\Samakal\Advertisement\Core
+D:\PROJECTS\MY RESPONSIBILITIES\Microservice\Services\Samakal\Advertisement\Infrastructure

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Controllers\Hospital\**" />
+	  <Compile Remove="Controllers\NopController\**" />
+	  <Content Remove="Controllers\Hospital\**" />
+	  <Content Remove="Controllers\NopController\**" />
+	  <EmbeddedResource Remove="Controllers\Hospital\**" />
+	  <EmbeddedResource Remove="Controllers\NopController\**" />
+	  <None Remove="Controllers\Hospital\**" />
+	  <None Remove="Controllers\NopController\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Controllers\LegalController\OppositePartyController.cs" />
+	  <Compile Remove="Controllers\LegalController\PetitionerController.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ExcelDataReader" Version="3.6.0" />
+		<PackageReference Include="MediatR" Version="10.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.0" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.18" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\CleanArchitecture.Application\CleanArchitecture.Application.csproj" />
+	  <ProjectReference Include="..\..\Core\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\CleanArchitecture.Persistence\CleanArchitecture.Persistence.csproj" />
+	</ItemGroup>
+
+</Project>

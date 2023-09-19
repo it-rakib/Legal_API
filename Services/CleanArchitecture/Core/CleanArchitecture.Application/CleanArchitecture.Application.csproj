@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Contracts\Persistence\HospitalPersistence\**" />
+		<Compile Remove="Contracts\Persistence\NopPersistence\**" />
+		<Compile Remove="Features\Demand\**" />
+		<Compile Remove="Features\Hospital\**" />
+		<Compile Remove="Features\Legal\Oppsite_Party\**" />
+		<Compile Remove="Features\Legal\Petitioner_Info\**" />
+		<Compile Remove="Features\Nop\**" />
+		<Compile Remove="Features\TempleteInfo\**" />
+		<EmbeddedResource Remove="Contracts\Persistence\HospitalPersistence\**" />
+		<EmbeddedResource Remove="Contracts\Persistence\NopPersistence\**" />
+		<EmbeddedResource Remove="Features\Demand\**" />
+		<EmbeddedResource Remove="Features\Hospital\**" />
+		<EmbeddedResource Remove="Features\Legal\Oppsite_Party\**" />
+		<EmbeddedResource Remove="Features\Legal\Petitioner_Info\**" />
+		<EmbeddedResource Remove="Features\Nop\**" />
+		<EmbeddedResource Remove="Features\TempleteInfo\**" />
+		<None Remove="Contracts\Persistence\HospitalPersistence\**" />
+		<None Remove="Contracts\Persistence\NopPersistence\**" />
+		<None Remove="Features\Demand\**" />
+		<None Remove="Features\Hospital\**" />
+		<None Remove="Features\Legal\Oppsite_Party\**" />
+		<None Remove="Features\Legal\Petitioner_Info\**" />
+		<None Remove="Features\Nop\**" />
+		<None Remove="Features\TempleteInfo\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="Contracts\Persistence\IPurchaseRFQSupplierRepository.cs" />
+		<Compile Remove="Contracts\Persistence\LegalPersistence\IOppositePartyRepository.cs" />
+		<Compile Remove="Contracts\Persistence\LegalPersistence\IPetitionerRepository.cs" />
+		<Compile Remove="Profiles\MappingHospitalProfile.cs" />
+		<Compile Remove="Profiles\MappingNOPProfile.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Dapper" Version="2.0.123" />
+		<PackageReference Include="FluentValidation" Version="10.4.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.4.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.18" />
+		<PackageReference Include="NETCore.MailKit" Version="2.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+
+		<Folder Include="Reports\INVENTORY\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Reports\DataSet\StyleStatusDataSet.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>StyleStatusDataSet.xsd</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Reports\DataSet\StyleStatusDataSet.xsd">
+			<Generator>MSDataSetGenerator</Generator>
+			<LastGenOutput>StyleStatusDataSet.Designer.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+
+</Project>

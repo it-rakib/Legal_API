@@ -1,0 +1,104 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Merchandising.Domain.Hospital
+{
+    public partial class Registration
+    {
+        public long Id { get; set; }
+        public int? PatientId { get; set; }
+        public string Name { get; set; }
+        public string Contact { get; set; }
+        public string BloodGroup { get; set; }
+        public string Sex { get; set; }
+        public DateTime? DateOfBirth { get; set; }
+        public string PresentAddress { get; set; }
+        public string FatherName { get; set; }
+        public string MotherName { get; set; }
+        public string CareOf { get; set; }
+        public string Email { get; set; }
+        public string Occupation { get; set; }
+        public string PermanentVillage { get; set; }
+        public string PermanentPo { get; set; }
+        public string PermanentPs { get; set; }
+        public string PermanentDistrict { get; set; }
+        public string PresentVillage { get; set; }
+        public string PresentPo { get; set; }
+        public string PresentPs { get; set; }
+        public string PresentDistrict { get; set; }
+        public int? EnteredBy { get; set; }
+        public DateTime? TransDate { get; set; }
+        public string PermanentAddress { get; set; }
+        public string District { get; set; }
+        public int? PoSerial { get; set; }
+        public int? DoctorId { get; set; }
+        public string Smoking { get; set; }
+        public int? Alcoholic { get; set; }
+        public string Hypertension { get; set; }
+        public string Diabetic { get; set; }
+        public string Thyroid { get; set; }
+        public string Copd { get; set; }
+        public string DrugAllergy { get; set; }
+        public string Asthma { get; set; }
+        public string Cardiac { get; set; }
+        public int? Renal { get; set; }
+        public string Others { get; set; }
+        public string Remarks { get; set; }
+        public int? IsSmoking { get; set; }
+        public int? IsHypertention { get; set; }
+        public int? IsDiabetic { get; set; }
+        public int? IsThyroid { get; set; }
+        public int? IsCopd { get; set; }
+        public int? IsDrugAllergy { get; set; }
+        public int? IsAsthma { get; set; }
+        public int? IsCardiac { get; set; }
+        public string EmergencyName { get; set; }
+        public string EmergencyPhone { get; set; }
+        public string EmergencyRelationship { get; set; }
+        public decimal? Height { get; set; }
+        public decimal? Weight { get; set; }
+        public string Bmi { get; set; }
+        public string Prem { get; set; }
+        public string Pulse { get; set; }
+        public string Restp { get; set; }
+        public string Bp { get; set; }
+        public string Temperature { get; set; }
+        public string Waist { get; set; }
+        public string Hip { get; set; }
+        public string ReferredPerson { get; set; }
+        public string FamilyHistory { get; set; }
+        public string MedicalHistory { get; set; }
+        public string CounsellorComment { get; set; }
+        public string DoctorComment { get; set; }
+        public string AlcoholicValue { get; set; }
+        public string RenalValue { get; set; }
+        public string MaritalStatus { get; set; }
+        public string Religion { get; set; }
+        public bool? FeverYes { get; set; }
+        public bool? FeverNo { get; set; }
+        public bool? HeadacheYes { get; set; }
+        public bool? HeadacheNo { get; set; }
+        public bool? CoughYes { get; set; }
+        public bool? CoughNo { get; set; }
+        public bool? BreathlessnessYes { get; set; }
+        public bool? BreathlessnessNo { get; set; }
+        public string CovidOthers { get; set; }
+        public DateTime? CovidSymtopDate { get; set; }
+        public byte[] BarCodeImage { get; set; }
+        public string ResponsiblePerson { get; set; }
+        public string ResponsibleRelation { get; set; }
+        public string ResponsibleContact { get; set; }
+        public int? OpdPackage { get; set; }
+        public decimal? Paid { get; set; }
+        public decimal? Due { get; set; }
+        public DateTime? OtDate { get; set; }
+        public int? AgeYear { get; set; }
+        public int? AgeMonth { get; set; }
+        public int? AgeDay { get; set; }
+        public int? PermanentDivision { get; set; }
+        public int? PresentDivision { get; set; }
+        public string Nid { get; set; }
+        public string Passport { get; set; }
+        public byte[] Picture { get; set; }
+    }
+}
